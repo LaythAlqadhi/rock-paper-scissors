@@ -79,7 +79,7 @@
             const computerSelection = getComputerChoice();
             playRound(playerSelection, computerSelection);
             document.getElementById("game-result").textContent = `Player: ${player} | Computer: ${computer}`;
-            if (player + computer === 5) {
+            if (player === 5 || computer === 5) {
                 if (player > computer) {
                     document.getElementById("game-result").textContent = "You Win!";
                   } else if (player < computer) {
